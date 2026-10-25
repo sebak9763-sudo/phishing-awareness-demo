@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cybersecurity Awareness</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #101827;
+      color: white;
+      text-align: center;
+      padding: 40px 16px;
+    }
+
+    .card {
+      max-width: 420px;
+      margin: 30px auto;
+      padding: 25px;
+      background: #1e293b;
+      border-radius: 14px;
+    }
+
+    h1 { color: #60a5fa; }
+
+    button {
+      padding: 12px 18px;
+      border: 0;
+      border-radius: 8px;
+      background: #2563eb;
+      color: white;
+      cursor: pointer;
+    }
+
+    #message { color: #86efac; }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>Cybersecurity Lab</h1>
+    <p>This is a safe phishing-awareness demonstration.</p>
+
+    <button onclick="showWarning()">
+      Check the warning
+    </button>
+
+    <p id="message"></p>
+  </div>
+
+  <script>
+    function showWarning() {
+      document.getElementById("message").textContent =
+        "Stay alert! Check the website address before trusting a link.";
+    }
+  </script>
+</body>
+</html>
